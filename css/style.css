@@ -70,12 +70,12 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-navigatore {
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.header-container {
+.header-navigatore {
   display: flex;
   align-items: center;
 }
@@ -110,6 +110,24 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  display: block;
+}
+
+.header-after-link {
+  position: relative;
+  color: #404bbf;
+}
+
+.header-after-link::after {
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .header-contacts {
@@ -183,6 +201,12 @@ img {
   background-color: #2e2f42;
   padding: 188px 0;
   border-bottom: 1px inside #e7e9fc;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero\ img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container-hero {
@@ -190,6 +214,7 @@ img {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+
 }
 
 .hero-title {
@@ -239,6 +264,21 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.container-icon-softs {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-softs{
+  fill: #2e2f42;
+}
+
 .features-softs-subtitle {
   margin-bottom: 8px;
 }
@@ -249,10 +289,6 @@ img {
 /* ________________ */
 
 /* ___________SECTION TEAM___________ */
-
-.container-team-items {
-  padding: 32px 0;
-}
 
 .features-team {
   background-color: #f4f4fd;
@@ -272,9 +308,14 @@ img {
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .features-team-item-image {
+}
+
+.container-team-items {
+  padding: 32px 16px;
 }
 
 .features-team-subtitle {
@@ -284,6 +325,42 @@ img {
 
 .features-team-item-text {
   text-align: center;
+}
+
+.container-icon {
+  margin-top: 8px;
+  width: 232px;
+  height: 40px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icon-list-items {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-list-items-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  fill: white;
+}
+
+.icon-list-items-link:hover,
+.icon-list-items-link:focus {
+  background-color: #404bbf;
 }
 
 /* ________________ */
@@ -317,25 +394,35 @@ img {
   border-top: none;
 }
 
+.features-portfolio-item:hover,
+.features-portfolio-item:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .features-portfolio-subtitle {
   margin-bottom: 8px;
 }
 
 .features-portfolio-item-text {
 }
+
 /* ________________ */
 
 /* _______________________________________________________ */
 
 /* _________________________FOOTER_________________________ */
 
-.container-footer {
-
-}
-
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  }
+
+.container-logo-text{
 }
 
 .footer-logo {
@@ -367,4 +454,34 @@ img {
 .footer-logo:focus {
   color: #404bbf;
 }
+
+.container-soc-footer {
+  display: block;
+  margin-left: 120px;
+}
+
+.text-soc-footer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.icon-list-items-link-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-list-items-link-footer:hover,
+.icon-list-items-link-footer:focus {
+  background-color: #31d0aa;
+}
+
 /* _______________________________________________________ */
