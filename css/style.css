@@ -89,6 +89,10 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  transition-property: color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .header-logo-color {
@@ -111,6 +115,10 @@ img {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .header-after-link {
@@ -147,6 +155,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-property: color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .header-logo:hover,
@@ -241,6 +253,10 @@ img {
   border-radius: 4px;
   border: none;
   height: 56px;
+  transition-property: background-color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .hero-button:hover,
@@ -352,6 +368,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .icon {
@@ -385,13 +405,46 @@ img {
 .features-portfolio-item {
 }
 
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
 .features-portfolio-item-image {
+}
+
+.overlay-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  transition-property: transform;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  transform: translateY(100%);
+  overflow: auto;
+}
+
+.overlay:hover .overlay-text {
+  transform: translateY(0)
 }
 
 .container-portfolio-items {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .features-portfolio-item:hover,
@@ -448,6 +501,10 @@ img {
   color: #f4f4fd;
   margin-top: 16px;
   max-width: 264px;
+  transition-property: color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .footer-logo:hover,
@@ -477,6 +534,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .icon-list-items-link-footer:hover,
