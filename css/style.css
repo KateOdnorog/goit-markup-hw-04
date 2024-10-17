@@ -333,6 +333,7 @@ img {
 }
 
 .container-icon {
+  margin-top: 8px;
   margin-left: 16px;
   margin-right: 16px;
   width: 232px;
