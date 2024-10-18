@@ -332,18 +332,19 @@ img {
   text-align: center;
 }
 
-.container-icon {
+/* .container-icon {
   margin-top: 8px;
   margin-left: 16px;
   margin-right: 16px;
   width: 232px;
   height: 40px;
-}
+} */
 
 .icon-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .icon-list-items {
