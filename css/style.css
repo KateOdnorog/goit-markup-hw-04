@@ -412,7 +412,7 @@ img {
   overflow: auto;
 }
 
-.overlay:hover .overlay-text {
+.features-portfolio-item:hover .overlay-text {
   transform: translateY(0)
 }
 
