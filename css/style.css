@@ -332,14 +332,6 @@ img {
   text-align: center;
 }
 
-/* .container-icon {
-  margin-top: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 232px;
-  height: 40px;
-} */
-
 .icon-list {
   display: flex;
   justify-content: center;
@@ -364,7 +356,7 @@ img {
 }
 
 .icon {
-  fill: white;
+  fill: #f4f4fd;
 }
 
 .icon-list-items-link:hover,
@@ -497,6 +489,13 @@ img {
 
 .container-soc-footer {
   display: block;
+}
+
+.icon-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
 }
 
 .text-soc-footer {
